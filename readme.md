@@ -423,10 +423,10 @@ Use the chosen framework to systematically identify potential Risks, Threats, Vu
 <b>Risk</b> (Risk is the likelihood and impact of a threat exploiting a vulnerability): Going to forest and placing Red Riding Hood in danger. It is the result from the interaction between the threat (wolf) and the vulnerability (Little Red Riding Hood). 
 <b>Exploit</b>: The need to go to grandmother and the means of the wolf to layaway by pretending to be the grandmother. 
 
-∎ The wolf is the <b>threat</b> (potential harm). 
-∎ Little Red Riding Hood's innocence is the <b>vulnerability</b> (weakness). 
-∎ The <b>risk</b> is the potential harm (what could happen). 
-∎ The wolf's deception with the possibility of Red Riding Hood exposure to the forest is the <b>exploit</b> (how the threat takes advantage of the vulnerability). 
+- ∎ The wolf is the <b>threat</b> (potential harm). 
+- ∎ Little Red Riding Hood's innocence is the <b>vulnerability</b> (weakness). 
+- ∎ The <b>risk</b> is the potential harm (what could happen). 
+- ∎ The wolf's deception with the possibility of Red Riding Hood exposure to the forest is the <b>exploit</b> (how the threat takes advantage of the vulnerability). 
 
 
 <b>risk</b> = (<b>threat</b> ∝ E5, motif, motive, motivation) x (<b>vulnerability</b> → <b>exploit</b>) = Σ (<b>likelihood</b> * <b>Impact</b>) 
@@ -439,6 +439,81 @@ Use the chosen framework to systematically identify potential Risks, Threats, Vu
 5. Some <b>Eventuality</b> aka <b>`Enriched Expectation`</b>(possible event, or something that may happen, a factor of “engineered luck” or “engineered emergence” or surgical timing, i.e. process of coming into being or realization or becoming exposed after being concealed, whether deliberate or random chance).The lack can be seen as a form of weaknesses of either side (opponents versus defense). 
  
 We can inspect via these factors: 
+
+Know your attackers, adversaries and <b>threats</b>. 
+1. What or who are the <b>threat(s)</b> 
+1.1. What are their E5? 
+1.2. What is their motif, motive, motivation? 
+
+<b>Profiling</b> is a vital step to know thy enemy. You must not just know <b>what</b> they are, you must know <b>who</b> they are, <b>what</b> they have, <b>how</b> they do, <b>what</b> they go for, <b>which</b> they avoid, <b>where</b> they came from, <b>where</b> they are going, <b>when</b> they want to do <b>what</b>, and, foremost — <b>why</b>. You must fathom their <b>motif</b>, their <b>motives</b>, and <b>motivations</b>. The same where you do the assessment, you profile their strengths and weaknesses, ability, facilities, resources, etc. 
+
+### Reference Threat Modelling
+
+The <b>D.R.E.A.D.</b> View 
+1. <b>D</b>amage: How wide and deep would the damage be if the attack succeeded? 
+2. <b>R</b>eproducibility: How easy is it to reproduce an attack?  
+3. <b>E</b>xploitability: How much time, effort, and expertise is needed to exploit the threat? What are the resources, e.g. E5, required? 
+4. <b>A</b>ffected Users: If a threat were exploited, what percentage of users would be affected? 
+5. <b>D</b>iscoverability: How easy is it for an attacker to discover this threat? How easy is it for the defender to detect the attempt? 
+ 
+The STRIDE defense model may be a framework we can used to arm our solution (Little Red Riding Hood): 
+
+<b>STRIDE Threat & Mitigation Techniques 
+[Threat Type]:[Mitigation Techniques]</b> 
+1. <b>S</b>poofing Identity 
+""" [Authentication] 
+1.1. Appropriate authentication 
+1.2. Protect secret data 
+1.3. Don’t store secrets 
+""" 
+ 
+2. <b>T</b>ampering with data 
+""" [Integrity] 
+2.1. Appropriate authorization 
+2.2. Hashes 
+2.3. MACs 
+2.4. Digital signatures 
+2.5. Tamper resistant protocols 
+""" 
+ 
+3. <b>R</b>epudiation 
+""" [Non-Repudiation] 
+3.1. Digital signatures 
+3.2. Timestamps 
+3.3. Audit trails 
+""" 
+ 
+4. <b>I</b>nformation Disclosure 
+""" [Confidentiality / Privacy] 
+4.1. Authorization 
+4.2. Privacy-enhanced protocols 
+4.3. Encryption 
+4.4. Protect secrets 
+4.5. Don’t store secrets 
+""" 
+ 
+5. <b>D</b>oS 
+"""  [Availability] 
+5.1. Appropriate authentication 
+5.2. Appropriate authorization 
+5.3. Filtering 
+5.4. Throttling 
+5.5. Quality of service 
+""" 
+ 
+6. <b>E</b>levation of privilege 
+""" [Authorization] 
+6.1. Run with least privilege 
+""" 
+
+### Threat Analysis
+
+The Threat Tree is a framework to capture the initial stepping of qualifying the risk terrain. The finer considerations would be to examine attack means and paths as possible root causes for the threats to manifest into exploits. Countermeasures can then be mapped to counter the threats. 
+
+### Threat Modeling Frameworks 
+
+There are many frameworks, and we would require one that simplifies and unifies all of them. Right from the aspect of organizational culture, the framework methodologies such as STRIDE, DREAD, PASTA, or CIA, would be incorporated to address compliance with security standards and regulations. There has to be intel first on the clear and present danger, then drill and train, war-game, audit the operation and security posture of the organization. The framework has to be alive and practicable when integrated as threat modeling into SDLC, DevOps, etc. The methodologies must also adapt and evolve with the situation. 
+
 
 """
 
