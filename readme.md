@@ -47,10 +47,16 @@ Threat modeling involves examining a system from the perspective of a potential 
 The foundational Step 1 involves a comprehensive understanding of the context surrounding the use cases of the solution. This initial phase is crucial for establishing a clear framework and identifying the specific scenarios in which the system will operate. By comprehensively grasping the context, threat modeling can be aided with the insights of the intricacies of user interactions, data flows, and the overall purpose of the solution. This contextual awareness lays the groundwork for the subsequent steps in the threat modeling process, enabling a more precise and targeted analysis of potential security threats. Effectively discerning the use cases ensures that the threat modeling exercise aligns closely with the actual operational environment, enhancing the relevance and accuracy of the security assessments conducted in later stages.  
 
 #### Step Breakdown
-| Step | Input | Means | Participants | Output |
-|------|-------|-------|-------------|--------|
-| 1.1 | Ensure alignment on context | Templates, FAQ, requirement documents (e.g. BRS, FRS, SRS) | Stakeholders, Requirements task force (including engineers and architects) | Agreed definitions, assumptions, focus of the problems |
-| 1.2 | Identify security principles and goals | Definitions, assumptions, business drivers, policies | Work sessions, surveys, metric collection | Principles and goals |
+|   | Step | Input | Means | Participants | Output |
+|------|------|-------|-------|-------------|--------|
+|   | 1.1 | Ensure that everyone aligns on the same context, i.e. agree on definitions, assumptions, focus of the problems. etc. | Templates of definitions, FAQ, requirement documents (e.g. BRS, FRS, SRS), etc. | 1. Set up focus group
+
+2. Structured interviews
+
+3. Create FAQ| Stakeholders, Requirements task force (including engineers and architects) | Agreed definitions, assumptions, focus of the problems |
+|   | 1.2 | Identify security principles and goals | Definitions, assumptions, focus of the problems, candidate goals, business drivers, policies and procedures, example | Conduct work
+sessions, surveys, collect metrics, etc. | Stakeholders,
+Requirements task force (including engineers and architects) | Principles and goals |
 
 ---
 
