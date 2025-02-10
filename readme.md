@@ -275,6 +275,7 @@ f. How are the secrets (keys, passcodes, etc) protected?
 g. What are the crypto objectives for each of the data objects of interest to be protected? (e.g. video, audio and short text may be ciphered and protected differently. The objective of confidentiality, privacy, integrity, and availability must be set as a clear criteria.) 
 h. What are the data / parameters (sensitive/ secret) to be protected? 
 - e.g. In some instances, as the SSO (Single-sign on) solutions deployed are using unsigned requests, while the usernames may not be of concern, it is more of how the credentials may be protected in the SSO.  
+
 The known use case(s) must be stated, as certain use cases can affect the security requirements of the implementation. This involves what data and sensitive operations are involved, as well as which zone(s) these operations are running in. 
  
  [2]. Risk / gap analysis 
@@ -307,6 +308,13 @@ Trust Levels: The level of access required to access the entry point is stated h
 | SM_001 | Session Monitor            | The agent component is critical for tracking and managing user sessions within the application. It plays a crucial role in maintaining user authentication and authorization states, ensuring a secure and seamless user experience. The Session Monitor stores session tokens, user privileges, and other session-related data. |
 |        | **Trust Levels Documentation** | Trust levels are documented in the threat model as follows:                                                                                                                                                                                                                                                                      |
 
+Trust levels are documented in the threat model as follows: 
+```
+ID: A unique number is assigned to each trust level.  
+Name: A descriptive name to identify the external entities that have been granted this trust level. 
+Description: A description of the trust level detailing the external entity who has been granted the trust level. 
+```
+
 2. **Trust Levels Description**
 
 | ID        | Name                            | Description                                                                                                                                                                                              |
@@ -318,22 +326,56 @@ Trust Levels: The level of access required to access the entry point is stated h
 | SMW_001   | Security middleware             | Security middleware components, including intrusion detection systems or web application firewalls, may access the Session Monitor to monitor and analyze session-related activities for potential security threats or anomalies.                                |
 | LAS_001   | Logging and auditing systems    | Logging and auditing systems may integrate with the Session Monitor to record session-related events and activities. This integration supports security auditing, compliance, and forensic analysis.                                            |
 
-3. **Subject, Interface, and Object (SIO) Analysis**
+3.2. **Subject, Interface, and Object (SIO) Analysis**
 
-- **Purpose**: Architecture draws the engineering paradigm to work out the components, relationships (and interactions/interface) of the functioning ecosystem to fulfill or manifest an enabling phenomenon. Architecture also helps us to understand the system. It is a blueprint to tool and capture the comprehension for both analysis and synthesis of solutions.
-- **Dependencies and Risk**: Recognizing that a system can only be as secure as its weakest link. Problems with inconsistent naming, poorly-defined boundaries, highly-coupled interfaces and systems, and ambiguity in definitions or consideration of any condition are hints to a future disaster.
-- **Subjects, Interfaces, and Objects**: Each entity must be carefully profiled and registered, ensuring trustworthiness before engaging in secure transactions.
+Architecture draws the engineering paradigm to work out the components, relationships (and interactions / interface) of the functioning ecosystem to fulfill or manifest an enabling phenomenon. Architecture also helps us to understand the system. It is a blueprint to tool and capture the comprehension for both analysis and synthesis of solutions. 
+
+Complicated systems always include room for error. A system can only be as secure as its weakest link. Problems with inconsistent naming, poorly-defined boundaries, highly-coupled interfaces and systems, and ambiguity in definitions or consideration of any condition are hints to a future disaster. A complex system with hidden flaws awaits for the glitch to spark cascading failures leading to a fateful fiasco. System designs are to be well-documented in separation of concerns, so that modules of the system may be independently developed and maintained. 
+
+Complex systems will eventually collapse, often at a sudden, when complex legacy systems have no one fully understanding how it works. Nobody can subtract from the system; everyone just adds.  
+
+Before any entities (whether user, system (server or mobile) or binaries that define an instance running a system) could participate in secure transactions, whether financial or non-fungible related, the subject must be trusted. This entity may even be related to a computation resource identity, such as a server or logic instance running or managing a process. Each <b>subject</b>, <b>object</b> and <b>interface</b> must be carefully profiled and registered. 
+
+Always check for the environmental conditions, which may be side-channel or external. This includes hostile testing which goes beyond scaling or load or stress testing. Hostile testing may be proactive and deliberated by human means or it would be because of hostile environment and external factors. 
+
+Examine all objects, subjects, interfaces and entities. The service and usage it is subjected to makes the difference. Whether the device is in the possession of the actors and the nature of the device matters. What the service or objects is applied on or to matters. The longevity and the durability of the solution must also come into consideration. Draw out the scopes and boundary condition assumptions, and place caveats where they may fail or be invalidated. 
+
+Mandate the participating parties to agree on the <b>intent</b> of the onboarding. With this, the suitable <b>attributes</b> that will make up the credentials for the enrollment could be collected and checked. Having the intent clearly defined will also help to <b>scope</b> the use case, and therefore, set the association for <b>rights</b> and allowed <b>actions</b> of the service mapped effectively to the <b>identity</b> of the user. 
 
 **4. Diagrams for Architectural Representation**
 
-1. **User Case**: A high-level view of the system from a user's perspective, showcasing interactions between users and the system.
-2. **Timing, Swimlane (Sequence)**: Illustrates the chronological order of interactions between different components or actors in the system over time.
-3. **Flow Chart**: A step-by-step representation of processes and decision-making within the system.
-4. **State Machine**: Represents the different states that a system or component can exist in and the transitions between these states in response to events.
-5. **Block-Component Flow**: Depicts the major components of the system as blocks or modules and illustrates the flow of data or control between them.
-6. **Entity-Relationship**: Models the relationships between different entities (such as database tables) within the system.
+Having multiple diagrams to describe the architecture of a system provides a comprehensive and nuanced understanding of various aspects, helping different stakeholders to grasp different facets of the system. It is recommended to have 6 diagrams to describe the architecture: 
 
-**5. Dependencies Documentation**
+1. **User Case**
+Purpose: Offers a high-level view of the system from a user's perspective, showcasing interactions between users and the system. It helps in identifying user roles, system functionalities, and the relationships between them. 
+
+2. **Timing, Swimlane (Sequence)**: 
+Purpose: Illustrates the chronological order of interactions between different components or actors in the system over time. Useful for visualizing the sequence of events, dependencies, and the timing of activities during the execution of a specific use case. 
+
+3. **Flow Chart**: 
+Purpose: Provides a detailed step-by-step representation of processes and decision-making within the system. Useful for understanding the logical flow of actions, conditions, and decisions, aiding in the analysis of system behavior. 
+
+4. **State Machine**: 
+Purpose: Represents the different states that a system or component can exist in and the transitions between these states in response to events. Useful for modeling the behavior of entities within the system and understanding how they respond to stimuli over time. 
+
+5. **Block-Component Flow**: 
+Purpose: Depicts the major components of the system as blocks or modules and illustrates the flow of data or control between them. Useful for understanding the high-level architecture and the relationships between major components in terms of data or control flow. 
+
+6. **Entity-Relationship**: 
+Purpose: Models the relationships between different entities (such as database tables) within the system. It helps in understanding the structure of data and how different entities are related, facilitating database design and optimization. 
+ 
+{Data flow diagrams examples to be given} 
+
+**3.2.1. Dependencies**
+Dependencies, whether originating internally or externally, encompass elements that could potentially pose risks to its security where a flaw or malware resides. When addressing dependencies, materials such as the Software Bill of Materials (SBoMs) can provide insights.  
+
+It is essential to recognize that dependencies play a pivotal role in the overall security posture of an application. External dependencies, which might include third-party libraries, frameworks, or components, can introduce vulnerabilities or impact the security of the entire system. Understanding the intended runtime environment of the application is crucial. For instance, if the application is designed to operate on a server compliant with the organization's hardening standards and is intended to be situated behind a firewall, documenting these specifications becomes imperative within the dependencies section of the SBoM. This documentation aids in comprehensively assessing and managing the security implications associated with external dependencies throughout the software development and deployment lifecycle. 
+
+Dependencies should be documented as follows: 
+```
+1. ID: A unique ID assigned to the dependency. 
+2. Description: A description of the dependency. 
+```
 
 | ID     | Description                                                                                                                                       |
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------|
