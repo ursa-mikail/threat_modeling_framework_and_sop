@@ -473,9 +473,9 @@ The STRIDE defense model may be a framework we can used to arm our solution (Lit
 [Threat Type]:[Mitigation Techniques]</b> 
 <b>Threat categories</b>: A mnemonic framework that stands for Spoofing, Tampering, Repudiation, Information disclosure, Denial of Service, and Elevation of privilege. 
 
-<a href="https://csf.tools/visualizations/sunburst-visualization-of-threats-to-controls/">STRIDE-LM</a>)
-
 <img src="./STRIDE-LM.png" alt="STRIDE-LM" style="width:42px;height:42px;">  
+
+<a href="https://csf.tools/visualizations/sunburst-visualization-of-threats-to-controls/">STRIDE-LM</a>
 
 1. <b>S</b>poofing Identity 
 <pre>
