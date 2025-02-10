@@ -788,7 +788,50 @@ SI – System and Information Integrity
 
 The Threat Tree is a framework to capture the initial stepping of qualifying the risk terrain. The finer considerations would be to examine attack means and paths as possible root causes for the threats to manifest into exploits. Countermeasures can then be mapped to counter the threats. 
 
+<u> Threat Tree Diagram </u>
 
+<pre>
+Attacker (Threat)
+Misuse
+- Engage money mules (M1)
+- Scam 
+- Hoax
+- Fraud
+- False IDs / Sybils
+- Steals or forged IDs
+- Money laundering
+- Exhortation
+Abuse (Man-Machine-Methods, M1,2,3)
+M1: 
+- steals credentials
+- forge IDs
+M2:
+- Malware: e.g. Ransomware, Spyware, etc. 
+M3: 
+- Brute force (includes dictionary attacks)
+Counter: number of trial limitations, etc
+- Creates bypasses
+- algorithmic weakness exploitation, refer cryptographic flaws, etc. 
+
+
+User (Vulnerability)
+Carelessness
+- poor choice of passwords
+- did not log-out of service (and/or devices)
+- shared data (poor privacy management) and details (leak to scammers)
+Recklessness (with deliberate intent, e.g. for convenience, or exploitative intent (hence, with malicious intent and user therein translated to as attacker))
+- 
+Service (Vulnerability)
+- lack MFA
+- lack A6 (user as well as processing, storage and transmission)
+- lacking in secrets management
+- poor input sanitization / counter injection defense 
+- lack cache and storage defense
+- lack DDoS counters
+- verbose trace (e.g. error messages)
+</pre>
+
+By examining and analyzing the use scenarios, weaknesses and systemic vulnerabilities can be identified. The possible transgression can be categorized as misuse or abuse cases as apart from the designed use cases. Pen tests can be stated and countermeasures validation test plans can be designed to attest the efficacy of the protective measures to deter a bypass or penetration.
 
 
 """
