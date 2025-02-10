@@ -450,12 +450,12 @@ Know your attackers, adversaries and <b>threats</b>.
 <b>Profiling</b> is a vital step to know thy enemy. You must not just know <b>what</b> they are, you must know <b>who</b> they are, <b>what</b> they have, <b>how</b> they do, <b>what</b> they go for, <b>which</b> they avoid, <b>where</b> they came from, <b>where</b> they are going, <b>when</b> they want to do <b>what</b>, and, foremost — <b>why</b>. You must fathom their <b>motif</b>, their <b>motives</b>, and <b>motivations</b>. The same where you do the assessment, you profile their strengths and weaknesses, ability, facilities, resources, etc. 
 
 ### Adversary profiling 
- 
-| Attacker Class      | Descriptions  | Characteristics  |
---------|---------------------------------------------------------|
-| Class 1  | Organized crime | Well equipped. Likely high expertise. |
-| Class 2  | Vandals | Motivated by likely moral cause. Sometimes, likely even insiders. |
-| Class 3 | Pranksters | Motivated by curiosity. Social deviants. |
+
+| Attacker Class | Descriptions       | Characteristics                                       |
+|---------------|--------------------|------------------------------------------------------|
+| Class 1      | Organized crime     | Well equipped. Likely high expertise.               |
+| Class 2      | Vandals             | Motivated by likely moral cause. Sometimes, likely even insiders. |
+| Class 3      | Pranksters          | Motivated by curiosity. Social deviants.            |
 
 
 Know your <b>vulnerabilities</b>. 
