@@ -291,12 +291,12 @@ While filing the exception, always consider the security sufficiency, completene
 State the detection, resistance, and recovery (repair, roll-back and restore) plan. 
  
 Assets are documented in the threat model as follows: 
+```
 ID: A unique ID is assigned to identify each asset. This will be used to cross-reference the asset with any threats or vulnerabilities that are identified. 
 Name: A descriptive name that clearly identifies the asset. 
 Description: A description of what the asset is and why it needs to be protected. 
 Trust Levels: The level of access required to access the entry point is stated here. These will be referenced with the trust levels with the components the asset is interacting with. 
-
-
+```
 
 1. **Trust Levels**
 
