@@ -205,11 +205,27 @@ There is also a thin line between offense and defense. Pentesting tools can also
 
 #### Services
 
-This domain considers defense propositions against threats while providing enterprise-grade application security (Appsec) for web applications and APIs. Enterprises can go beyond traditional rule-based protection and use contextual AI to prevent threats with precision. It includes Posture Management through configuration management services that automate governance processes, visualize and assess security posture, detect insecure configurations, and enforce best practices at scale.
+While Endpoints can be seen as infrastructure, they are part of systems. This is the component of interface. Endpoint security involves securing individual devices whether mobile, Internet of Things (IoT), sensors, or any server or client devices that connect to a network. The goal is to prevent malware infections, unauthorized access, and data loss from these device systems. 
+Systems also include critical infrastructure systems such as Industrial Control Systems (ICS) like power plants, manufacturing facilities, and utilities from cyber threats that could impact their operations.  
+ 
+This domain provides Intelligence and protects enterprise workloads with threat prevention enabled by machine learning, world-class research, CVE watch and provides automatic remediation for configuration drift. 
+Intelligence also includes to ingest log and event data, delivering contextualized visualization of entire infrastructure and security analytics, helping to enhance real-time intrusion detection and policy violation alerts based on user-defined criteria. This is part of comprehensive investigation of security threats, forensics and threat hunting, with network security analytics. 
+It provides Multi-tenancy context segregation assurance, Data loss prevention (DLP), log and alert management as well as visualizations of security information across network system to coordinate to improve overall observability. It includes monitoring and responding to storage events, stream data processing, databases changes, code/ executables modifications, Notifications (e.g., SMS, Emails, IoT). 
+The domain can be used to identify unused assets, map how security teams work, verify the integrity of a recently deployed system, and identify what technologies are most used. In this way, it can also help organizations save money and identify important opportunities for training. 
+
 
 #### Applications
 
-Applications can be porous and fine-grained, comprising 100s of functions, many of which are tiny microservices with their own policies, roles, APIs, and audit trails. This expands the attack surface by adding more entry points with smaller portions of the app behind each one, requiring defense considerations for each entry point.
+While platform can be referred to as the <b>architecture, tools and processes</b>, including integrating vendor-specific functions—and often third-party products, that ensure the functions of an entire computing environment, we refer to the computing language platform base that runs within each system. This can be on any layer depending on the language platform (including the different forms of smart contract platforms) in use. 
+Domain Specific Language Platform has to be managed and assured differently as they are self-styled by nature. 
+Different languages have different `gotchas`, and the version of each language is changing fast. It behooves for the platform specialist to engage a team of specialized experts looking at the idiosyncrasies and flawed implementation that can occur for each language platform. Also note that, language can behave differently on different environments (cloud, mobile, embedded, etc), OS, runtime, hardware, etc. 
+
+#### Protocol, Algorithm and Hardware 
+As it may be language Platform related, this will affect the <b>Protocol</b> and <b>Algorithm</b> strata as the users are to be abstracted from the underlying workings and yet be guided by the tool itself on the limitation and scope of safety usage to ensure security being well-implemented and deployed. There has to be caveats if the <b>Hardware</b> and deployment is mobile, distributed, resource and energy limited (e.g. embedded), and/or subjected to hostile or harsh environment, etc. 
+
+**Algorithm** domain can be on any layer depending on where and how the cryptographic suites are deployed, maintained and designated in usage. 
+**Protocol** piece algorithms to be coordinated into a protocol for safe use and implementation. 
+**Hardware** (+ IoT, embedded) can be on any layer that is designated and deployed for realizing the blockchain operations. 
 
 #### User Protection
 
