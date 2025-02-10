@@ -213,20 +213,6 @@ Intelligence also includes to ingest log and event data, delivering contextualiz
 It provides Multi-tenancy context segregation assurance, Data loss prevention (DLP), log and alert management as well as visualizations of security information across network system to coordinate to improve overall observability. It includes monitoring and responding to storage events, stream data processing, databases changes, code/ executables modifications, Notifications (e.g., SMS, Emails, IoT). 
 The domain can be used to identify unused assets, map how security teams work, verify the integrity of a recently deployed system, and identify what technologies are most used. In this way, it can also help organizations save money and identify important opportunities for training. 
 
-
-#### Applications
-
-While platform can be referred to as the <b>architecture, tools and processes</b>, including integrating vendor-specific functions—and often third-party products, that ensure the functions of an entire computing environment, we refer to the computing language platform base that runs within each system. This can be on any layer depending on the language platform (including the different forms of smart contract platforms) in use. 
-Domain Specific Language Platform has to be managed and assured differently as they are self-styled by nature. 
-Different languages have different `gotchas`, and the version of each language is changing fast. It behooves for the platform specialist to engage a team of specialized experts looking at the idiosyncrasies and flawed implementation that can occur for each language platform. Also note that, language can behave differently on different environments (cloud, mobile, embedded, etc), OS, runtime, hardware, etc. 
-
-#### Protocol, Algorithm and Hardware 
-As it may be language Platform related, this will affect the <b>Protocol</b> and <b>Algorithm</b> strata as the users are to be abstracted from the underlying workings and yet be guided by the tool itself on the limitation and scope of safety usage to ensure security being well-implemented and deployed. There has to be caveats if the <b>Hardware</b> and deployment is mobile, distributed, resource and energy limited (e.g. embedded), and/or subjected to hostile or harsh environment, etc. 
-
-**Algorithm** domain can be on any layer depending on where and how the cryptographic suites are deployed, maintained and designated in usage. 
-**Protocol** piece algorithms to be coordinated into a protocol for safe use and implementation. 
-**Hardware** (+ IoT, embedded) can be on any layer that is designated and deployed for realizing the blockchain operations. 
-
 #### User Protection
 
 This domain covers Application Security Threats to users, including:
@@ -240,49 +226,29 @@ This domain covers Application Security Threats to users, including:
    - Frauds: Involve deliberate deception or misrepresentation to gain financial advantage.
 7. Account for human errors by educating users and implementing security tooling.
 
-##### Notes on Scams and Frauds
 
-###### [Intent]
-- **Scam:** Designed to exploit the victim's gullibility or ignorance.
-- **Fraud:** Involves deliberate deception with the intention of gaining an unfair financial advantage.
+#### Applications
 
-###### [Method]
-- **Scam:** Often relies on psychological manipulation and victim cooperation.
-- **Fraud:** Can involve complex schemes such as forgery, identity theft, and embezzlement.
+While platform can be referred to as the <b>architecture, tools and processes</b>, including integrating vendor-specific functions—and often third-party products, that ensure the functions of an entire computing environment, we refer to the computing language platform base that runs within each system. This can be on any layer depending on the language platform (including the different forms of smart contract platforms) in use. 
+Domain Specific Language Platform has to be managed and assured differently as they are self-styled by nature. 
+Different languages have different `gotchas`, and the version of each language is changing fast. It behooves for the platform specialist to engage a team of specialized experts looking at the idiosyncrasies and flawed implementation that can occur for each language platform. Also note that, language can behave differently on different environments (cloud, mobile, embedded, etc), OS, runtime, hardware, etc. 
 
-###### [Victim Involvement]
-- **Scam:** Victims actively participate unknowingly.
-- **Fraud:** Victims may not be aware until discovering unauthorized actions.
+#### Protocol, Algorithm and Hardware 
+As it may be language Platform related, this will affect the <b>Protocol</b> and <b>Algorithm</b> strata as the users are to be abstracted from the underlying workings and yet be guided by the tool itself on the limitation and scope of safety usage to ensure security being well-implemented and deployed. There has to be caveats if the <b>Hardware</b> and deployment is mobile, distributed, resource and energy limited (e.g. embedded), and/or subjected to hostile or harsh environment, etc. 
 
-###### [Scale]
-- **Scam:** Smaller in scale, involving fewer victims.
-- **Fraud:** Larger scale with potentially more significant financial losses.
+<b>Algorithm</b> domain can be on any layer depending on where and how the cryptographic suites are deployed, maintained and designated in usage. 
+<b>Protocol</b> piece algorithms to be coordinated into a protocol for safe use and implementation. 
+<b>Hardware</b> (+ IoT, embedded) can be on any layer that is designated and deployed for realizing the blockchain operations. 
 
-###### Countermeasures
-1. MFA (Multi-factor Authentication).
-2. Enforce the principle of least privilege.
-3. Log incidents for legal evidence collection.
 
-##### Caveats
-- The line between offense and defense is thin; pentesting tools can also be crimeware.
 
-#### System
-
-Endpoints are part of systems and involve securing devices like mobile phones, IoT, sensors, and servers to prevent malware, unauthorized access, and data loss. Critical infrastructure systems like Industrial Control Systems (ICS) must also be protected from cyber threats.
-
-This domain offers Intelligence for enterprise workload protection, including threat prevention enabled by machine learning, CVE watch, and automatic remediation for configuration drift. It also includes real-time intrusion detection and policy violation alerts, network security analytics, and log management.
-
-##### Platform
-
-The platform includes architecture, tools, and processes to ensure the functions of a computing environment. It also involves Domain Specific Language Platforms that require specialized management due to their self-styled nature and the rapid changes in languages and environments.
-
-#### Protocol, Algorithm, and Hardware
-
-Protocols and algorithms ensure security through proper implementation, while hardware (including IoT and embedded systems) is deployed for blockchain operations.
-
-##### Decomposing the Solution
+##### Decompose The Solution (Application, Network, etc) Into Service Segments, Components And Modules 
 
 The examination involves:
+**3.1.** Identify Assets and Data Flows 
+**3.2.** Subject, Interface and Object (SIO) Analysis 
+**3.2.1.** Dependencies 
+**3.2.2.** Entry Points and Exit Points 
 
 ##### 3.1 Identify Assets and Data Flows
 
