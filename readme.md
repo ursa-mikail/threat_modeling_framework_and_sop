@@ -20,7 +20,7 @@
 3. Ability for us to peer inside of source code, and not get bogged down in the minutia.  
 4. Explanations and alignment of how both the tool and framework fit together and work to accelerate each other.  
 
-### To-do Review Process
+##### To-do Review Process
 To ensure the listed tasks are addressed efficiently, the following process will be followed:
 - **Task Prioritization:** Rank items based on impact and feasibility.
 - **Stakeholder Alignment:** Engage relevant teams for input and agreement.
@@ -34,6 +34,13 @@ This document describes a structured approach to solution threat modeling to ide
 Threat modeling involves examining a system from the perspective of a potential attacker. The threat modeling process comprises the following steps, with documentation recorded at each stage.  
 
 ## Threat Modeling Process
+
+#### Step 1: Understand the context of the use cases of the solution 
+#### Step 2: Determine the strata(s) involved of the solution 
+#### Step 3: Decompose the solution (Application, Network, etc) into service segments, components and modules 
+#### Step 4: Determine and Rank Threats 
+#### Step 5: Determine Countermeasures and Mitigation 
+#### Step 6: Address Trade-offs 
 
 ### Step 1: Understand the context of the use cases of the solution
 The foundational step involves a comprehensive understanding of the context surrounding the use cases of the solution. This initial phase is crucial for establishing a clear framework and identifying the specific scenarios in which the system will operate. By comprehensively grasping the context, threat modeling can be aided with insights into user interactions, data flows, and the overall purpose of the solution.  
