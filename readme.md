@@ -3,12 +3,13 @@
 ## Contents
 - Introduction  
 - Threat Modeling Process  
-  - Understand The Context Of The Use Cases Of The Solution  
-  - Determine The Strata(s) Involved For The Solution  
-  - Decompose The Solution (Application, Network, etc) Into Service Segments, Components And Modules  
-  - Determine And Rank Threats  
-  - Determine Countermeasures and Mitigation  
-  - Address Trade-offs  
+- Understand The Context Of The Use Cases Of The Solution  
+- Determine The Strata(s) Involved For The Solution  
+- Decompose The Solution (Application, Network, etc) Into Service Segments, Components And Modules  
+- Determine And Rank Threats  
+
+- Determine Countermeasures and Mitigation  
+- Address Trade-offs  
 - To-do Review Process  
 
 ---
@@ -211,6 +212,62 @@ Each asset is documented with the following details:
 - **Name**: Descriptive name of the asset.
 - **Description**: Reason for asset protection.
 - **Trust Levels**: Access levels required for entry points.
+
+
+1. **Trust Levels**
+
+| ID     | Name                      | Description                                                                                                                                                                                                                                                                                                   |
+|--------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CD_001 | Customer Database          | The database contains personally identifiable information (PII) of registered users, including names, addresses, and contact details. It is an asset for customer interactions and must be protected to ensure privacy and compliance with data protection regulations.                               |
+| PG_001 | Payment Gateway            | The gateway facilitates secure online transactions, processing credit card information and financial data. This component is pivotal for the revenue stream of the application and demands protection to prevent unauthorized access or tampering.                                                             |
+| SM_001 | Session Monitor            | The agent component is critical for tracking and managing user sessions within the application. It plays a crucial role in maintaining user authentication and authorization states, ensuring a secure and seamless user experience. The Session Monitor stores session tokens, user privileges, and other session-related data. |
+|        | **Trust Levels Documentation** | Trust levels are documented in the threat model as follows:                                                                                                                                                                                                                                                                      |
+
+2. **Trust Levels Description**
+
+| ID        | Name                            | Description                                                                                                                                                                                              |
+|-----------|---------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| AS_001    | Authorized application servers  | Servers that serve as an intermediary between the client and the database.                                                                                                                                                                                                 |
+| MS_001    | Microservices                   | Microservices may have their own databases or share a common database. Each microservice is responsible for managing its data and may interact with the database independently.                                                |
+| PPM_001   | Payment processing module       | A dedicated payment processing module or service within the system is designed to interact specifically with the payment gateway. This module handles the creation of payment requests, processing responses from the payment gateway, and managing the overall payment flow. |
+| BES_001   | Back-end server or middleware   | A back-end server or middleware may play a role in orchestrating communication between different components of the system and the payment gateway. It ensures that the necessary data is transmitted securely and that responses from the payment gateway are appropriately handled.       |
+| SMW_001   | Security middleware             | Security middleware components, including intrusion detection systems or web application firewalls, may access the Session Monitor to monitor and analyze session-related activities for potential security threats or anomalies.                                |
+| LAS_001   | Logging and auditing systems    | Logging and auditing systems may integrate with the Session Monitor to record session-related events and activities. This integration supports security auditing, compliance, and forensic analysis.                                            |
+
+3. **Subject, Interface, and Object (SIO) Analysis**
+
+- **Purpose**: Architecture draws the engineering paradigm to work out the components, relationships (and interactions/interface) of the functioning ecosystem to fulfill or manifest an enabling phenomenon. Architecture also helps us to understand the system. It is a blueprint to tool and capture the comprehension for both analysis and synthesis of solutions.
+- **Dependencies and Risk**: Recognizing that a system can only be as secure as its weakest link. Problems with inconsistent naming, poorly-defined boundaries, highly-coupled interfaces and systems, and ambiguity in definitions or consideration of any condition are hints to a future disaster.
+- **Subjects, Interfaces, and Objects**: Each entity must be carefully profiled and registered, ensuring trustworthiness before engaging in secure transactions.
+
+**4. Diagrams for Architectural Representation**
+
+1. **User Case**: A high-level view of the system from a user's perspective, showcasing interactions between users and the system.
+2. **Timing, Swimlane (Sequence)**: Illustrates the chronological order of interactions between different components or actors in the system over time.
+3. **Flow Chart**: A step-by-step representation of processes and decision-making within the system.
+4. **State Machine**: Represents the different states that a system or component can exist in and the transitions between these states in response to events.
+5. **Block-Component Flow**: Depicts the major components of the system as blocks or modules and illustrates the flow of data or control between them.
+6. **Entity-Relationship**: Models the relationships between different entities (such as database tables) within the system.
+
+**5. Dependencies Documentation**
+
+| ID     | Description                                                                                                                                       |
+|--------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| LIB001 | Third-party library for cryptographic functions. This dependency is utilized to enhance the application's security by implementing robust encryption algorithms. |
+| FW002  | Represents the firewall solution integrated into the application's infrastructure, providing a crucial layer of defense.                          |
+| API003 | External API for Payment Processing. This dependency facilitates communication with a third-party payment processing service.                      |
+
+**6. SDLC and SBoM**
+
+The defensive SDLC emphasizes traceable details for forensics. SBoM formats are encouraged for dependency management and software lifecycle management.
+"""
+
+# Saving the reformatted content to a new file
+reformatted_file_path = '/mnt/data/reformatted_threat_model_document.txt'
+with open(reformatted_file_path, 'w') as f:
+    f.write(content)
+
+reformatted_file_path
 
 
 .... to be continued ...
