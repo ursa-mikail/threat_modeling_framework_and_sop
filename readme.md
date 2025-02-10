@@ -106,14 +106,17 @@ Step 6 addresses trade-offs. This stage acknowledges that implementing security 
 ---
 
 ## Understand The Context Of The Use Cases Of The Solution
-In threat modeling, understanding the context of the solution’s use cases involves an examination of the use case context, often captured in a Business Requirement Specification (BRS). The BRS serves as a foundational document, articulating why the solution exists. It captures environmental nuances and the business landscape in which the solution is expected to operate. The document outlines essential requirements, delineating existing service levels and targeted improvements. It serves as the starting point for proposing preliminary security measures and garnering consensus from stakeholders, ensuring a collective understanding of security objectives before deeper threat analysis.
+In threat modeling, the equivalent of understanding the context of the solution's use cases involves examination of use case context. This can be captured in a document such as the Business Requirement Specification (BRS). The BRS serves as a foundational document, encapsulating the entirety of requirements articulating why the solution exists. This document is instrumental in capturing the environmental nuances and business landscape within which the solution is expected to operate. It outlines the essential requirements that the system must fulfill, delineating the existing service level and the targeted improvements it aims to achieve. It serves as the starting point to propose preliminary security measures and garner consensus from stakeholders, ensuring a collective understanding of the security objectives. This sets the stage for a more in-depth exploration of potential threats in subsequent phases of the threat modeling process. 
 
 ## Determine The Strata(s) Involved For The Solution
 ### Define Objectives and Scope
-Identify the scope of the threat modeling process, including the network topology, systems architecture, applications, or components to be assessed.
+Identify the scope of the threat modeling process, including the network topology, systems architecture, applications, or components to be assessed. 
 
 ### 7 Strata
-A simplified and unified framework can be derived from multiple frameworks, covering 7 strata. The focus is to design countermeasures and defenses against threats across infrastructures, systems, platforms, frameworks, schemes, protocols, and algorithms. The framework ensures observability and controllability of the cybersecurity terrain while overcoming complexity and lack of visibility.
+A simplified and unified framework can be derived from multiple frameworks. The framework covers 7 strata. The focus is to have countermeasures and defenses designed against threats for the domains of infrastructures, systems, platform frameworks, schemes, protocols, and algorithms. 
+
+The 7-strata domain framework is derived as a common denominator that covers the frameworks mentioned above. The idea is to capture the observability and controllability of the cybersecurity terrain addressed. The crux is to overcome complexity and the lack of visibility. 
+
 
 #### The 7-Strata Domains:
 1. **Infrastructure — Network**
