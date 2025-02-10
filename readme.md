@@ -458,6 +458,16 @@ Know your attackers, adversaries and <b>threats</b>.
 | Class 3      | Pranksters          | Motivated by curiosity. Social deviants.            |
 
 
+| Attack Class           | Explanation and Consequences |
+|------------------------|----------------------------|
+| System Modification    | Severe. |
+| System / Service Hijack | Serious. Able to execute some functions (execute unauthorized code or commands), but not fully modify the root. Gain privileges / assume identity (on entity: devices, services, or systems), which can lead to gaining access or means to System Modification. |
+| System / Service Misuse | Moderate to serious. This includes both abuse and misuse. Bypass protection mechanisms, hide activities and/or processes. |
+| Invasion of Privacy    | Moderate to serious. Includes message forging. Able to execute or write to some files to corrupt (or spoof or counterfeit), not just read. Gain privileges / assume identity (on entity: human), which can lead to devices, services, or systems being compromised. |
+| Denial of Service      | Moderate. Serious but not severely so. These attacks can bring a machine to a standstill and may require a reboot. Causes unreliable execution, resource consumption on system, network bandwidth, and/or applications. |
+| Antagonism            | Light to moderate. Merely annoying, this attack class is the most commonly encountered. Implemented by malicious applets. May require restarting the browser. |
+
+
 Know your <b>vulnerabilities</b>. 
 
 2.1. What are the existing <b>vulnerabilities</b>? 
