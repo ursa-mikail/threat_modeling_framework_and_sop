@@ -747,7 +747,7 @@ The Threat Tree is a framework to capture the initial stepping of qualifying the
 
 .... to be continued ...
 
---
+--- 
 
 ==================================================================================== 
  
@@ -757,5 +757,24 @@ The work here is to rank (in terms of priority), grade (in terms of category), a
 <a href="https://mikail-eliyah.medium.com/measuring-judgement-and-decisions-f5db9f7d118d">Measuring Judgement And Decisions</a>
 
 The risk can be measured by means of its impact, possibility and ease of exploitation. By using statistical expectation, the risk can be estimated quantitatively. This can be further enhanced with adaptive risk scoring (Ref: <a href="https://mikail-eliyah.medium.com/computing-fermi-expectation-for-decisions-on-risk-or-gain-scores-37a24c4b0b62">Computing Expectation For Decisions On Risk Scores</a>).  
+
+
+---  
+
+# The Chapters of Synthesis 
+ 
+## 1.1. Facilitate Cross-Functional Workshops (Campaign Organization-Wide) 
+
+Conduct threat modeling workshops involving representatives from various teams, including developers, architects, QA, and security experts. Encourage open discussions and collaboration to ensure diverse perspectives are considered. 
+
+## 1.2. Document Threats 
+
+Document identified threats and vulnerabilities in a central repository. Use a standardized format for threat documentation to ensure clarity and consistency.  
+
+## 1.3. Create Primers For The 7 Strata 
+
+Simplify them to the most fundamental common principles and create a uniform framework that consists of primers and audit checklists to ensure coverage. 
+
+◊ There has to be a principal primer (general), and the important part is that we would work on simplified (derived) primers for specific teams, as the teams may have different focus (usually 7 different domains). By governance and operations, the teams focusing on the different domains would have different concerns. This aids the team to have a principled view with the <b>principal</b> primer, and understand immediately on what to focus on with the <b>specific</b> one, i.e. on the 7 strata framework. 
 
 
