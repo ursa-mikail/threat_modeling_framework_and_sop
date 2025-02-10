@@ -451,6 +451,13 @@ Know your attackers, adversaries and <b>threats</b>.
 
 ### Adversary profiling 
  
+| Attacker Class      | Descriptions  | Characteristics  |
+--------|---------------------------------------------------------|
+| Class 1  | Organized crime | Well equipped. Likely high expertise. |
+| Class 2  | Vandals | Motivated by likely moral cause. Sometimes, likely even insiders. |
+| Class 3 | Pranksters | Motivated by curiosity. Social deviants. |
+
+
 Know your <b>vulnerabilities</b>. 
 
 2.1. What are the existing <b>vulnerabilities</b>? 
@@ -469,7 +476,7 @@ Know the <b>likelihood</b>.
 Know the <b>Impact</b>. 
 
 2.1 What can be the damage? 
-- this includes business damage (e.g. business reputation, market confidence (Customer Trust Erosion), financial fraud, litigation, loss of competitive edge, etc) and technical damages (e.g. data loss, IP theft, service downtime or disruption, system takeovers, etc)  
+ - this includes business damage (e.g. business reputation, market confidence (Customer Trust Erosion), financial fraud, litigation, loss of competitive edge, etc) and technical damages (e.g. data loss, IP theft, service downtime or disruption, system takeovers, etc)  
 2.2. How many services may be affected?  
 2.3. How many components may be affected? 
 
