@@ -520,3 +520,15 @@ There are many frameworks, and we would require one that simplifies and unifies 
 
 .... to be continued ...
 
+--
+
+==================================================================================== 
+ 
+## Rank, Grade, and Rate  
+The work here is to rank (in terms of priority), grade (in terms of category), and rate (in terms of %). 
+
+<a href="https://mikail-eliyah.medium.com/measuring-judgement-and-decisions-f5db9f7d118d">Measuring Judgement And Decisions</a>
+
+The risk can be measured by means of its impact, possibility and ease of exploitation. By using statistical expectation, the risk can be estimated quantitatively. This can be further enhanced with adaptive risk scoring (Ref: Computing Expectation For Decisions On Risk Scores).  
+
+
