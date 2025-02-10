@@ -529,6 +529,6 @@ The work here is to rank (in terms of priority), grade (in terms of category), a
 
 <a href="https://mikail-eliyah.medium.com/measuring-judgement-and-decisions-f5db9f7d118d">Measuring Judgement And Decisions</a>
 
-The risk can be measured by means of its impact, possibility and ease of exploitation. By using statistical expectation, the risk can be estimated quantitatively. This can be further enhanced with adaptive risk scoring (Ref: Computing Expectation For Decisions On Risk Scores).  
+The risk can be measured by means of its impact, possibility and ease of exploitation. By using statistical expectation, the risk can be estimated quantitatively. This can be further enhanced with adaptive risk scoring (Ref: <a href="https://mikail-eliyah.medium.com/computing-fermi-expectation-for-decisions-on-risk-or-gain-scores-37a24c4b0b62">Computing Expectation For Decisions On Risk Scores</a>).  
 
 
