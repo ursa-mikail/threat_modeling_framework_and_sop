@@ -412,6 +412,34 @@ Insecure Data Storage: Improper handling of data at exit points may contribute t
 
 Lack of Encryption: Failure to implement encryption protocols during data transmission at exit points may expose data to eavesdropping, enabling attackers to intercept and decipher sensitive information. 
 
+## Determine And Rank Threats 
+
+## Identify Risks, Threats, Vulnerabilities and Exploits 
+
+Use the chosen framework to systematically identify potential Risks, Threats, Vulnerabilities and Exploits. Analogy to understand this can be the metaphor of `the Little Red Riding Hood `: 
+
+<b>Vulnerability</b>: Little Red Riding Hood 
+<b>Threat</b>: Wolf 
+<b>Risk</b> (Risk is the likelihood and impact of a threat exploiting a vulnerability): Going to forest and placing Red Riding Hood in danger. It is the result from the interaction between the threat (wolf) and the vulnerability (Little Red Riding Hood). 
+<b>Exploit</b>: The need to go to grandmother and the means of the wolf to layaway by pretending to be the grandmother. 
+
+∎ The wolf is the <b>threat</b> (potential harm). 
+∎ Little Red Riding Hood's innocence is the <b>vulnerability</b> (weakness). 
+∎ The <b>risk</b> is the potential harm (what could happen). 
+∎ The wolf's deception with the possibility of Red Riding Hood exposure to the forest is the <b>exploit</b> (how the threat takes advantage of the vulnerability). 
+
+
+<b>risk</b> = (<b>threat</b> ∝ E5, motif, motive, motivation) x (<b>vulnerability</b> → <b>exploit</b>) = Σ (<b>likelihood</b> * <b>Impact</b>) 
+
+<b>E5</b>:  
+1. <b>Endurance</b> (or Effort, endurance can also be in the form of - desperation),  
+2. <b>Expertise</b> (and Experience), 
+3. <b>Equipment</b> (including Information, including a handle, such as a weakness or vulnerability, which can be used as an <b>Exploit</b>. This is a measurement of resources in terms of availability and affordability, and sometimes the accessibility of the resources of your opponents or targets),  
+4. <b>Espionage</b> (Inside job, in the field of security, here it is a misnomer in this case, but a definitive description of how missing information or perspective that can make that decisive difference), and  
+5. Some <b>Eventuality</b> aka <b>`Enriched Expectation`</b>(possible event, or something that may happen, a factor of “engineered luck” or “engineered emergence” or surgical timing, i.e. process of coming into being or realization or becoming exposed after being concealed, whether deliberate or random chance).The lack can be seen as a form of weaknesses of either side (opponents versus defense). 
+ 
+We can inspect via these factors: 
+
 """
 
 
