@@ -447,27 +447,47 @@ Know your attackers, adversaries and <b>threats</b>.
 
 <b>Profiling</b> is a vital step to know thy enemy. You must not just know <b>what</b> they are, you must know <b>who</b> they are, <b>what</b> they have, <b>how</b> they do, <b>what</b> they go for, <b>which</b> they avoid, <b>where</b> they came from, <b>where</b> they are going, <b>when</b> they want to do <b>what</b>, and, foremost — <b>why</b>. You must fathom their <b>motif</b>, their <b>motives</b>, and <b>motivations</b>. The same where you do the assessment, you profile their strengths and weaknesses, ability, facilities, resources, etc. 
 
-### Reference Threat Modelling
+### Reference Threat Modelling Frameworks
 
-The <b>D.R.E.A.D.</b> View 
+There are many frameworks, and we would require one that simplifies and unifies all of them. Right from the aspect of organizational culture, the framework methodologies such as STRIDE, DREAD, PASTA, or CIA, would be incorporated to address compliance with security standards and regulations. There has to be intel first on the clear and present danger, then drill and train, war-game, audit the operation and security posture of the organization. The framework has to be alive and practicable when integrated as threat modeling into SDLC, DevOps, etc. The methodologies must also adapt and evolve with the situation. 
+
+<b>POAD</b> 
+<b>P</b>hysical security. 
+<b>O</b>perational security. 
+<b>A</b>dministrative security. 
+<b>D</b>igital security. 
+
+<b>D.R.E.A.D.</b> 
+<b>Risk rating</b>: A score-based approach that stands for Damage, Reproducibility, Exploitability, Affected users, and Discoverability 
+
 1. <b>D</b>amage: How wide and deep would the damage be if the attack succeeded? 
 2. <b>R</b>eproducibility: How easy is it to reproduce an attack?  
 3. <b>E</b>xploitability: How much time, effort, and expertise is needed to exploit the threat? What are the resources, e.g. E5, required? 
 4. <b>A</b>ffected Users: If a threat were exploited, what percentage of users would be affected? 
 5. <b>D</b>iscoverability: How easy is it for an attacker to discover this threat? How easy is it for the defender to detect the attempt? 
  
-The STRIDE defense model may be a framework we can used to arm our solution (Little Red Riding Hood): 
+The STRIDE defense model may be a framework we can used to arm our solution (Little Red Riding Hood):
+
 
 <b>STRIDE Threat & Mitigation Techniques 
 [Threat Type]:[Mitigation Techniques]</b> 
+<b>Threat categories</b>: A mnemonic framework that stands for Spoofing, Tampering, Repudiation, Information disclosure, Denial of Service, and Elevation of privilege. 
+
+<a href="https://csf.tools/visualizations/sunburst-visualization-of-threats-to-controls/">STRIDE-LM</a>)
+
+<img src="./STRIDE-LM.png" alt="STRIDE-LM" style="width:42px;height:42px;">  
+
 1. <b>S</b>poofing Identity 
+<pre>
 """ [Authentication] 
 1.1. Appropriate authentication 
 1.2. Protect secret data 
 1.3. Don’t store secrets 
 """ 
+</pre>
  
 2. <b>T</b>ampering with data 
+<pre>
 """ [Integrity] 
 2.1. Appropriate authorization 
 2.2. Hashes 
@@ -475,15 +495,19 @@ The STRIDE defense model may be a framework we can used to arm our solution (Lit
 2.4. Digital signatures 
 2.5. Tamper resistant protocols 
 """ 
- 
+</pre>
+
 3. <b>R</b>epudiation 
+<pre>
 """ [Non-Repudiation] 
 3.1. Digital signatures 
 3.2. Timestamps 
 3.3. Audit trails 
 """ 
- 
+</pre>
+
 4. <b>I</b>nformation Disclosure 
+<pre>
 """ [Confidentiality / Privacy] 
 4.1. Authorization 
 4.2. Privacy-enhanced protocols 
@@ -491,8 +515,10 @@ The STRIDE defense model may be a framework we can used to arm our solution (Lit
 4.4. Protect secrets 
 4.5. Don’t store secrets 
 """ 
+</pre>
  
 5. <b>D</b>oS 
+<pre>
 """  [Availability] 
 5.1. Appropriate authentication 
 5.2. Appropriate authorization 
@@ -500,19 +526,218 @@ The STRIDE defense model may be a framework we can used to arm our solution (Lit
 5.4. Throttling 
 5.5. Quality of service 
 """ 
- 
-6. <b>E</b>levation of privilege 
+</pre>
+
+6. <b>E</b>levation of privilege
+<pre> 
 """ [Authorization] 
 6.1. Run with least privilege 
 """ 
+</pre>
+
+<pre>
+[Spoofing]: {PR.AC-1, PR.AC-6, PR.AC-7, PR.PT-1} 
+[Tampering]: {PR.AC-2, PR.DS-1, PR.DS-2, PR.DS-6, PR.DS-8, PR.IP-3, PR.MA-1, PR.PT-1, PR.PT-2, DE.CM-2, DE.CM-4, DE.CM-5, DE.CM-7} 
+[Repudiation]: {PR.AC-1, PR.AC-6, PR.AC-7, PR.PT-1} 
+[Information disclosure]: {PR.DS-1, PR.DS-2, PR.DS-5, PR.IP-6, PR.PT-2} 
+[Denial of Service]: {PR.DS-4, PR.IP-4, PR.PT-5} 
+[Elevation of privilege]: {PR.AC-4, PR.PT-3, DE.CM-4, DE.CM-5, DE.CM-7} 
+[Lateral Movement]: {PR.AC-3, PR.AC-5, PR.AC-6, PR.MA-2, PR.PT-3, PR.PT-4, DE.CM-1, DE.CM-6, DE.CM-7, RS.MI-1} 
+Lateral Movement (LM) was added to STRIDE.  
+</pre>
+
+<a href="https://csf.tools/reference/stride-lm/">STRIDE</a>
+
+<b>TRIKE</b> (structured approach): a framework that involves identifying assets, attackers, vulnerabilities, and attack vectors for each identified asset. 
+ 
+<b>PASTA</b> (structured approach, `Process for Attack Simulation and Threat Analysis`): PASTA involves a structured approach to threat modeling that includes asset identification, attacker profiling, threat analysis, and risk estimation. 
+ 
+<b>VAST</b> (scenario-based, `Visual, Agile, and Simple Threat`): a scenario-based approach that involves defining a set of attack scenarios based on the system, network, or application under review. 
+ 
+<b>LINDDUN</b>:  
+<b>L</b>inkability,  
+<b>I</b>dentifiability,  
+<b>N</b>onrepudiation,  
+<b>D</b>etectability,  
+<b>D</b>isclosure of information,  
+<b>U</b>nawareness,  
+<b>N</b>oncompliance. 
+
+<b>NIST</b>
+<pre>
+[NIST Cybersecurity Framework (CSF) controls]   
+ID.AM-1: Physical devices and systems within the organization are inventoried 
+ID.AM-2: Software platforms and applications within the organization are inventoried 
+ID.AM-3: Organizational communication and data flows are mapped 
+ID.AM-4: External information systems are catalogued 
+ID.AM-5: Resources (e.g., hardware, devices, data, time, personnel, and software) are prioritized based on their classification, criticality, and business value 
+ID.AM-6: Cybersecurity roles and responsibilities for the entire workforce and third-party stakeholders (e.g., suppliers, customers, partners) are established 
+ID.BE-1: The organization’s role in the supply chain is identified and communicated 
+ID.BE-2: The organization’s place in critical infrastructure and its industry sector is identified and communicated 
+ID.BE-3: Priorities for organizational mission, objectives, and activities are established and communicated 
+ID.BE-4: Dependencies and critical functions for delivery of critical services are established 
+ID.BE-5: Resilience requirements to support delivery of critical services are established for all operating states (e.g. under duress/attack, during recovery, normal operations) 
+ID.GV-1: Organizational cybersecurity policy is established and communicated 
+ID.GV-2: Cybersecurity roles and responsibilities are coordinated and aligned with internal roles and external partners 
+ID.GV-3: Legal and regulatory requirements regarding cybersecurity, including privacy and civil liberties obligations, are understood and managed 
+ID.GV-4: Governance and risk management processes address cybersecurity risks 
+ID.RA-1: Asset vulnerabilities are identified and documented 
+ID.RA-2: Cyber threat intelligence is received from information sharing forums and sources 
+ID.RA-3: Threats, both internal and external, are identified and documented 
+ID.RA-4: Potential business impacts and likelihoods are identified 
+ID.RA-5: Threats, vulnerabilities, likelihoods, and impacts are used to determine risk 
+ID.RA-6: Risk responses are identified and prioritized 
+ID.RM-1: Risk management processes are established, managed, and agreed to by organizational stakeholders 
+ID.RM-2: Organizational risk tolerance is determined and clearly expressed 
+ID.RM-3: The organization’s determination of risk tolerance is informed by its role in critical infrastructure and sector specific risk analysis 
+ID.SC-1: Cyber supply chain risk management processes are identified, established, assessed, managed, and agreed to by organizational stakeholders 
+ID.SC-2: Suppliers and third party partners of information systems, components, and services are identified, prioritized, and assessed using a cyber supply chain risk assessment process 
+ID.SC-3: Contracts with suppliers and third-party partners are used to implement appropriate measures designed to meet the objectives of an organization’s cybersecurity program and Cyber Supply Chain Risk Management Plan. 
+ID.SC-4: Suppliers and third-party partners are routinely assessed using audits, test results, or other forms of evaluations to confirm they are meeting their contractual obligations. 
+ID.SC-5: Response and recovery planning and testing are conducted with suppliers and third-party providers 
+ 
+PR.AC-1: Identities and credentials are issued, managed, verified, revoked, and audited for authorized devices, users and processes 
+PR.AC-2: Physical access to assets is managed and protected 
+PR.AC-3: Remote access is managed 
+PR.AC-4: Access permissions and authorizations are managed, incorporating the principles of least privilege and separation of duties 
+PR.AC-5: Network integrity is protected (e.g., network segregation, network segmentation) 
+PR.AC-6: Identities are proofed and bound to credentials and asserted in interactions 
+PR.AC-7: Users, devices, and other assets are authenticated (e.g., single-factor, multi-factor) commensurate with the risk of the transaction (e.g., individuals’ security and privacy risks and other organizational risks) 
+PR.AT-1: All users are informed and trained 
+PR.AT-2: Privileged users understand their roles and responsibilities 
+PR.AT-3: Third-party stakeholders (e.g., suppliers, customers, partners) understand their roles and responsibilities 
+PR.AT-4: Senior executives understand their roles and responsibilities 
+PR.AT-5: Physical and cybersecurity personnel understand their roles and responsibilities 
+PR.DS-1: Data-at-rest is protected 
+PR.DS-2: Data-in-transit is protected 
+PR.DS-3: Assets are formally managed throughout removal, transfers, and disposition 
+PR.DS-4: Adequate capacity to ensure availability is maintained 
+PR.DS-5: Protections against data leaks are implemented 
+PR.DS-6: Integrity checking mechanisms are used to verify software, firmware, and information integrity 
+PR.DS-7: The development and testing environment(s) are separate from the production environment 
+PR.DS-8: Integrity checking mechanisms are used to verify hardware integrity 
+PR.IP-1: A baseline configuration of information technology/industrial control systems is created and maintained incorporating security principles (e.g. concept of least functionality) 
+PR.IP-2: A System Development Life Cycle to manage systems is implemented 
+PR.IP-3: Configuration change control processes are in place 
+PR.IP-4: Backups of information are conducted, maintained, and tested 
+PR.IP-5: Policy and regulations regarding the physical operating environment for organizational assets are met 
+PR.IP-6: Data is destroyed according to policy 
+PR.IP-7: Protection processes are improved 
+PR.IP-8: Effectiveness of protection technologies is shared 
+PR.IP-9: Response plans (Incident Response and Business Continuity) and recovery plans (Incident Recovery and Disaster Recovery) are in place and managed 
+PR.IP-10: Response and recovery plans are tested 
+PR.IP-11: Cybersecurity is included in human resources practices (e.g., deprovisioning, personnel screening) 
+PR.IP-12: A vulnerability management plan is developed and implemented 
+PR.MA-1: Maintenance and repair of organizational assets are performed and logged, with approved and controlled tools 
+PR.MA-2: Remote maintenance of organizational assets is approved, logged, and performed in a manner that prevents unauthorized access 
+PR.PT-1: Audit/log records are determined, documented, implemented, and reviewed in accordance with policy 
+PR.PT-2: Removable media is protected and its use restricted according to policy 
+PR.PT-3: The principle of least functionality is incorporated by configuring systems to provide only essential capabilities 
+PR.PT-4: Communications and control networks are protected 
+PR.PT-5: Mechanisms (e.g., failsafe, load balancing, hot swap) are implemented to achieve resilience requirements in normal and adverse situations 
+ 
+DE.AE-1: A baseline of network operations and expected data flows for users and systems is established and managed 
+DE.AE-2: Detected events are analyzed to understand attack targets and methods 
+DE.AE-3: Event data are collected and correlated from multiple sources and sensors 
+DE.AE-4: Impact of events is determined 
+DE.AE-5: Incident alert thresholds are established 
+DE.CM-1: The network is monitored to detect potential cybersecurity events 
+DE.CM-2: The physical environment is monitored to detect potential cybersecurity events 
+DE.CM-3: Personnel activity is monitored to detect potential cybersecurity events 
+DE.CM-4: Malicious code is detected 
+DE.CM-5: Unauthorized mobile code is detected 
+DE.CM-6: External service provider activity is monitored to detect potential cybersecurity events 
+DE.CM-7: Monitoring for unauthorized personnel, connections, devices, and software is performed 
+DE.CM-8: Vulnerability scans are performed 
+DE.DP-1: Roles and responsibilities for detection are well defined to ensure accountability 
+DE.DP-2: Detection activities comply with all applicable requirements 
+DE.DP-3: Detection processes are tested 
+DE.DP-4: Event detection information is communicated 
+DE.DP-5: Detection processes are continuously improved 
+ 
+RS.RP-1: Response plan is executed during or after an incident 
+RS.CO-1: Personnel know their roles and order of operations when a response is needed 
+RS.CO-2: Incidents are reported consistent with established criteria 
+RS.CO-3: Information is shared consistent with response plans 
+RS.CO-4: Coordination with stakeholders occurs consistent with response plans 
+RS.CO-5: Voluntary information sharing occurs with external stakeholders to achieve broader cybersecurity situational awareness 
+RS.AN-1: Notifications from detection systems are investigated 
+RS.AN-2: The impact of the incident is understood 
+RS.AN-3: Forensics are performed 
+RS.AN-4: Incidents are categorized consistent with response plans 
+RS.AN-5: Processes are established to receive, analyze and respond to vulnerabilities disclosed to the organization from internal and external sources (e.g. internal testing, security bulletins, or security researchers) 
+RS.MI-1: Incidents are contained 
+RS.MI-2: Incidents are mitigated 
+RS.MI-3: Newly identified vulnerabilities are mitigated or documented as accepted risks 
+RS.IM-1: Response plans incorporate lessons learned 
+RS.IM-2: Response strategies are updated 
+ 
+RC.RP-1: Recovery plan is executed during or after a cybersecurity incident 
+RC.IM-1: Recovery plans incorporate lessons learned 
+RC.IM-2: Recovery strategies are updated 
+RC.CO-1: Public relations are managed 
+RC.CO-2: Reputation is repaired after an incident 
+RC.CO-3: Recovery activities are communicated to internal and external stakeholders as well as executive and management teams 
+ 
+[Identify] 
+ID.AM: Asset Management 
+ID.BE: Business Environment 
+ID.GV: Governance 
+ID.RA: Risk Assessment 
+ID.RM: Risk Management Strategy 
+ID.SC: Supply Chain Risk Management 
+ 
+[Protect] 
+PR.AC: Identity Management, Authentication and Access Control 
+PR.AT: Awareness and Training 
+PR.DS: Data Security 
+PR.IP: Information Protection Processes and Procedures 
+PR.MA: Maintenance 
+PR.PT: Protective Technology 
+ 
+[Detect] 
+DE.AE: Anomalies and Events 
+DE.CM: Security Continuous Monitoring 
+DE.DP: Detection Processes 
+ 
+[Respond] 
+RS.AN: Analysis 
+RS.CO: Communications 
+RS.IM: Improvements 
+RS.MI: Mitigation 
+ 
+[Recover] 
+RC.CO: Communications 
+RC.IM: Improvements 
+RC.RP: Recovery Planning 
+ 
+ 
+Notes: 
+AC – Access Control 
+AU – Audit and Accountability 
+AT – Awareness and Training 
+CM – Configuration Management 
+CP – Contingency Planning 
+IA – Identification and Authentication 
+IR – Incident Response 
+MA – Maintenance 
+MP – Media Protection 
+PS – Personnel Security 
+PE – Physical and Environmental Protection 
+PL – Planning 
+PM – Program Management 
+RA – Risk Assessment 
+CA – Compliance Assessment and Authorization 
+SC – System and Communications Protection 
+SI – System and Information Integrity 
+</pre>
+
 
 ### Threat Analysis
 
 The Threat Tree is a framework to capture the initial stepping of qualifying the risk terrain. The finer considerations would be to examine attack means and paths as possible root causes for the threats to manifest into exploits. Countermeasures can then be mapped to counter the threats. 
 
-### Threat Modeling Frameworks 
 
-There are many frameworks, and we would require one that simplifies and unifies all of them. Right from the aspect of organizational culture, the framework methodologies such as STRIDE, DREAD, PASTA, or CIA, would be incorporated to address compliance with security standards and regulations. There has to be intel first on the clear and present danger, then drill and train, war-game, audit the operation and security posture of the organization. The framework has to be alive and practicable when integrated as threat modeling into SDLC, DevOps, etc. The methodologies must also adapt and evolve with the situation. 
 
 
 """
