@@ -383,11 +383,35 @@ Dependencies should be documented as follows:
 | FW002  | Represents the firewall solution integrated into the application's infrastructure, providing a crucial layer of defense.                          |
 | API003 | External API for Payment Processing. This dependency facilitates communication with a third-party payment processing service.                      |
 
-**6. SDLC and SBoM**
+In the defensive SDLC, SBoM formats are encouraged for traceable details for forensics. 
+ 
+**3.2.2. Entry Points and Exit Points**
+Entry points are the interfaces where potential attackers interact with the components. Exit points are the interfaces where potential attackers may extract from the components. 
 
 The defensive SDLC emphasizes traceable details for forensics. SBoM formats are encouraged for dependency management and software lifecycle management.
-"""
 
+Threats associated with <b>entry</b> points may include: 
+```
+Injection Attacks: Malicious actors may attempt to exploit entry points by injecting malicious code, such as SQL injection or Cross-Site Scripting (XSS), to manipulate data or compromise the integrity of the system. 
+
+Unauthorized Access: Threats involving unauthorized access may target entry points to gain illicit entry into the system. This could involve exploiting weak authentication mechanisms or attempting to bypass access controls. 
+
+Denial-of-Service (DoS) Attacks: Entry points are susceptible to DoS attacks, where malicious entities overwhelm the system with excessive requests, leading to service disruption and potential downtime. 
+
+Input Validation Issues: Failure to adequately validate and sanitize inputs at entry points may expose the system to input-related vulnerabilities, allowing attackers to manipulate and misuse data. 
+ 
+Threats associated with <b>exit</b> points may include: 
+```
+Data Leakage: Inadequate protection at exit points can result in unintentional data leakage, exposing sensitive information to unauthorized entities during data transfer. 
+
+Man-in-the-Middle Attacks: Exit points are susceptible to interception by malicious actors, leading to Man-in-the-Middle attacks. This threat could compromise the confidentiality and integrity of data transmitted between the system and external entities. 
+
+Insecure Data Storage: Improper handling of data at exit points may contribute to insecure data storage, creating opportunities for unauthorized access or data tampering. 
+```
+
+Lack of Encryption: Failure to implement encryption protocols during data transmission at exit points may expose data to eavesdropping, enabling attackers to intercept and decipher sensitive information. 
+
+"""
 
 
 .... to be continued ...
