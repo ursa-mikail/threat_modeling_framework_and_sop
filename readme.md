@@ -155,8 +155,55 @@ The domain covers user protection such as Application Security Threats to users.
 * Scams tend to rely on the victim's voluntary participation and psychological manipulation, while frauds involve more deliberate, often complex acts of deception and can lead to more serious legal consequences. 
 7. Account for the human aspect: User error is one of the most common causes of data breaches. Taking a 2-pronged approach of user education and implementing security tooling such as URL filters, anti-malware, and intelligent firewalls can reduce the risk of social engineering leading to a catastrophic security issue. 
 
+#### <u>Notes on Scams and Frauds</u>
 
-#### Domain of Services
+##### [Intent]  
+###### Scam  
+Scams are designed to exploit the victim's gullibility or ignorance. They often rely on the victim's voluntary participation, albeit based on false information.  
+
+###### Fraud  
+Fraud involves deliberate deception or misrepresentation with the intention of gaining an unfair or illegal financial advantage.  
+
+##### [Method]  
+###### Scam  
+Scams often rely on psychological manipulation, persuasion, and the victim's willingness to cooperate. Common types of scams include:  
+- Lottery scams  
+- Phishing scams  
+- Romance scams  
+
+###### Fraud  
+Fraud schemes can be more complex and may involve forgery, identity theft, embezzlement, or other forms of financial deception. Types of fraud include:  
+- Credit card fraud  
+- Insurance fraud  
+- Securities fraud  
+
+##### [Victim Involvement]  
+###### Scam  
+Victims of scams are often active participants, albeit unknowingly. They are convinced to take certain actions, such as:  
+- Sharing personal information  
+- Sending money  
+- Clicking on malicious links  
+
+###### Fraud  
+In fraud cases, victims may not be as actively involved. For example, identity theft can occur without the victim's knowledge until they discover unauthorized transactions on their accounts.  
+
+##### [Scale]  
+###### Scam  
+Scams can target both individuals and organizations but are often smaller in scale, involving fewer victims at a time.  
+
+###### Fraud  
+Frauds can be larger in scale and may involve more significant financial losses. Corporate fraud, for instance, can affect a company's financial health and its shareholders.  
+
+##### <b>Countermeasures</b>  
+1. **Enable Multi-Factor Authentication (MFA).**  
+2. **Enforce the principle of least privilege.**  
+3. **Log incidents for legal evidence collection.**  
+
+##### <b>Caveat(s)</b>  
+There is also a thin line between offense and defense. Pentesting tools can also be crimeware.  
+
+
+#### Services
 
 This domain considers defense propositions against threats while providing enterprise-grade application security (Appsec) for web applications and APIs. Enterprises can go beyond traditional rule-based protection and use contextual AI to prevent threats with precision. It includes Posture Management through configuration management services that automate governance processes, visualize and assess security posture, detect insecure configurations, and enforce best practices at scale.
 
