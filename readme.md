@@ -245,10 +245,10 @@ As it may be language Platform related, this will affect the <b>Protocol</b> and
 ##### Decompose The Solution (Application, Network, etc) Into Service Segments, Components And Modules 
 
 The examination involves:
-**3.1.** Identify Assets and Data Flows 
-**3.2.** Subject, Interface and Object (SIO) Analysis 
-**3.2.1.** Dependencies 
-**3.2.2.** Entry Points and Exit Points 
+ **3.1.** Identify Assets and Data Flows 
+ **3.2.** Subject, Interface and Object (SIO) Analysis 
+ **3.2.1.** Dependencies 
+ **3.2.2.** Entry Points and Exit Points 
 
 ##### 3.1 Identify Assets and Data Flows
 
@@ -260,10 +260,12 @@ Identify and document the critical assets, data flows, and trust boundaries with
 This does not include user guide or user set-up guide. Though use cases should be depicted.  
  
 Documentations (architecture diagrams describing mechanisms) must be clear and direct to trace the secret generation, flow, and storage. Some fundamental premises must be covered: 
+
 a. Strength of cryptography. 
 a.1. What are the cipher suites used, i.e. ciphering, hashing, signing, etc? What are the key lengths used?   
 a.2. What are the FIPS certification held by your solution? Is so, please cite them.  
 a.3. How do you tend to your data at rest, data-in-transit, and data-in-processing? 
+
 b. What are the secrets in use? What are they used for? (e.g. there should not be the same key for cipher and signing) What are their life-cycles? 
 c. The secret generations (i.e. Has the RNG been tested for entropy?). 
 d. How are the secrets distributed / populated?  
