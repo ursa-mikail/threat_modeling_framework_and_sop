@@ -791,7 +791,7 @@ The Threat Tree is a framework to capture the initial stepping of qualifying the
 <u> Threat Tree Diagram </u>
 
 <pre>
-Attacker (Threat)
+[Attacker (Threat)]
 Misuse
 - Engage money mules (M1)
 - Scam 
@@ -813,15 +813,14 @@ Counter: number of trial limitations, etc
 - Creates bypasses
 - algorithmic weakness exploitation, refer cryptographic flaws, etc. 
 
-
-User (Vulnerability)
+[User (Vulnerability)]
 Carelessness
 - poor choice of passwords
 - did not log-out of service (and/or devices)
 - shared data (poor privacy management) and details (leak to scammers)
 Recklessness (with deliberate intent, e.g. for convenience, or exploitative intent (hence, with malicious intent and user therein translated to as attacker))
-- 
-Service (Vulnerability)
+
+[Service (Vulnerability)]
 - lack MFA
 - lack A6 (user as well as processing, storage and transmission)
 - lacking in secrets management
