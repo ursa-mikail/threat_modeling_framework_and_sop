@@ -423,6 +423,8 @@ Use the chosen framework to systematically identify potential Risks, Threats, Vu
 <b>Risk</b> (Risk is the likelihood and impact of a threat exploiting a vulnerability): Going to forest and placing Red Riding Hood in danger. It is the result from the interaction between the threat (wolf) and the vulnerability (Little Red Riding Hood). 
 <b>Exploit</b>: The need to go to grandmother and the means of the wolf to layaway by pretending to be the grandmother. 
 
+The defense model may be a framework we can used to arm our solution (Little Red Riding Hood):
+
 - ∎ The wolf is the <b>threat</b> (potential harm). 
 - ∎ Little Red Riding Hood's innocence is the <b>vulnerability</b> (weakness). 
 - ∎ The <b>risk</b> is the potential harm (what could happen). 
@@ -447,6 +449,32 @@ Know your attackers, adversaries and <b>threats</b>.
 
 <b>Profiling</b> is a vital step to know thy enemy. You must not just know <b>what</b> they are, you must know <b>who</b> they are, <b>what</b> they have, <b>how</b> they do, <b>what</b> they go for, <b>which</b> they avoid, <b>where</b> they came from, <b>where</b> they are going, <b>when</b> they want to do <b>what</b>, and, foremost — <b>why</b>. You must fathom their <b>motif</b>, their <b>motives</b>, and <b>motivations</b>. The same where you do the assessment, you profile their strengths and weaknesses, ability, facilities, resources, etc. 
 
+### Adversary profiling 
+ 
+Know your <b>vulnerabilities</b>. 
+2.1. What are the existing <b>vulnerabilities</b>? 
+2.2. How would they be turned into <b>exploits</b>?  
+2.2.1. Are they known?  
+2.2.2. Are they easy to be discovered within our solutions and services? 
+2.2.2. Are they hard to be reproduced? 
+
+Another means from the above equation is to examine: 
+
+Know the <b>likelihood</b>. 
+1. What is the probability? How has the occurrences been observed or known?  
+ 
+Know the <b>Impact</b>. 
+2.1 What can be the damage? 
+* this includes business damage (e.g. business reputation, market confidence (Customer Trust Erosion), financial fraud, litigation, loss of competitive edge, etc) and technical damages (e.g. data loss, IP theft, service downtime or disruption, system takeovers, etc)  
+2.2. How many services may be affected?  
+2.3. How many components may be affected? 
+
+<b> 
+Impact := the cost for you to repair and recover it  
+              := damage  
+              := net(assets + liabilities) 
+</b>
+
 ### Reference Threat Modelling Frameworks
 
 There are many frameworks, and we would require one that simplifies and unifies all of them. Right from the aspect of organizational culture, the framework methodologies such as STRIDE, DREAD, PASTA, or CIA, would be incorporated to address compliance with security standards and regulations. There has to be intel first on the clear and present danger, then drill and train, war-game, audit the operation and security posture of the organization. The framework has to be alive and practicable when integrated as threat modeling into SDLC, DevOps, etc. The methodologies must also adapt and evolve with the situation. 
@@ -465,8 +493,6 @@ There are many frameworks, and we would require one that simplifies and unifies 
 3. <b>E</b>xploitability: How much time, effort, and expertise is needed to exploit the threat? What are the resources, e.g. E5, required? 
 4. <b>A</b>ffected Users: If a threat were exploited, what percentage of users would be affected? 
 5. <b>D</b>iscoverability: How easy is it for an attacker to discover this threat? How easy is it for the defender to detect the attempt? 
- 
-The STRIDE defense model may be a framework we can used to arm our solution (Little Red Riding Hood):
 
 
 <b>STRIDE Threat & Mitigation Techniques 
