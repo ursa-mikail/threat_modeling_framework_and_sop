@@ -763,18 +763,26 @@ The risk can be measured by means of its impact, possibility and ease of exploit
 
 # The Chapters of Synthesis 
  
-## 1.1. Facilitate Cross-Functional Workshops (Campaign Organization-Wide) 
+### 1.1. Facilitate Cross-Functional Workshops (Campaign Organization-Wide) 
 
 Conduct threat modeling workshops involving representatives from various teams, including developers, architects, QA, and security experts. Encourage open discussions and collaboration to ensure diverse perspectives are considered. 
 
-## 1.2. Document Threats 
+### 1.2. Document Threats 
 
 Document identified threats and vulnerabilities in a central repository. Use a standardized format for threat documentation to ensure clarity and consistency.  
 
-## 1.3. Create Primers For The 7 Strata 
+### 1.3. Create Primers For The 7 Strata 
 
 Simplify them to the most fundamental common principles and create a uniform framework that consists of primers and audit checklists to ensure coverage. 
 
 ◊ There has to be a principal primer (general), and the important part is that we would work on simplified (derived) primers for specific teams, as the teams may have different focus (usually 7 different domains). By governance and operations, the teams focusing on the different domains would have different concerns. This aids the team to have a principled view with the <b>principal</b> primer, and understand immediately on what to focus on with the <b>specific</b> one, i.e. on the 7 strata framework. 
 
+## Countermeasures 
+
+Organizations face a myriad of threats that seek to exploit vulnerabilities in their systems and infrastructure. To effectively safeguard against these threats, it is crucial to implement robust countermeasures and mitigation techniques. 2 widely recognized frameworks for addressing cybersecurity risks are the STRIDE model and the NIST Cybersecurity Framework.
+
+The STRIDE model categorizes threats into 6 main types: Spoofing Identity, Tampering with data, Repudiation, Information Disclosure, Denial of Service, and Elevation of privilege. For each threat type, corresponding mitigation techniques are prescribed, ranging from implementing digital signatures to enforcing the principle of least privilege.
+On the other hand, the National Institute of Standards and Technology (NIST) Cybersecurity Framework provides a comprehensive approach to managing cybersecurity risk. It identifies various risk types and recommends specific mitigations to address each one. These include measures such as inventory control and management, visibility and monitoring, governance and safeguarding measures, facility security, and threat awareness and response strategies.
+
+By combining the insights from both the STRIDE model and the NIST Cybersecurity Framework, organizations can develop holistic strategies to protect their assets, data, and operations from a wide range of cyber threats. This integrated approach not only helps in mitigating current risks but also fosters a proactive cybersecurity posture that can adapt to emerging threats in the digital landscape.
 
