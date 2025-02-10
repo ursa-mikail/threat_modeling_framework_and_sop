@@ -457,13 +457,14 @@ Know your <b>vulnerabilities</b>.
 
 2.2. How would they be turned into <b>exploits</b>?  
 2.2.1. Are they known?  
-2.2.2. Are they easy to be discovered within our solutions and services? 
+2.2.2. Are they easy to be discovered within our solutions and services?  
 2.2.3. Are they hard to be reproduced? 
 
 Another means from the above equation is to examine: 
 
 Know the <b>likelihood</b>. 
-1. What is the probability? How has the occurrences been observed or known?  
+
+2.1. What is the probability? How has the occurrences been observed or known?  
  
 Know the <b>Impact</b>. 
 
@@ -473,9 +474,11 @@ Know the <b>Impact</b>.
 2.3. How many components may be affected? 
 
 <b> 
+<pre>
 Impact := the cost for you to repair and recover it  
               := damage  
               := net(assets + liabilities) 
+</pre>
 </b>
 
 ### Reference Threat Modelling Frameworks
