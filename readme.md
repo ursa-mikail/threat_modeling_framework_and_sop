@@ -35,12 +35,12 @@ Threat modeling involves examining a system from the perspective of a potential 
 
 ## Threat Modeling Process
 
-#### Step 1: Understand the context of the use cases of the solution  
-#### Step 2: Determine the strata(s) involved of the solution  
-#### Step 3: Decompose the solution (Application, Network, etc) into service segments, components and modules  
-#### Step 4: Determine and Rank Threats  
-#### Step 5: Determine Countermeasures and Mitigation  
-#### Step 6: Address Trade-offs  
+**Step 1**: Understand the context of the use cases of the solution  
+**Step 2**: Determine the strata(s) involved of the solution  
+**Step 3**: Decompose the solution (Application, Network, etc) into service segments, components and modules  
+**Step 4**: Determine and Rank Threats  
+**Step 5**: Determine Countermeasures and Mitigation  
+**Step 6**: Address Trade-offs  
 
 
 ### Step 1: Understand the context of the use cases of the solution
@@ -270,12 +270,6 @@ Each asset is documented with the following details:
 The defensive SDLC emphasizes traceable details for forensics. SBoM formats are encouraged for dependency management and software lifecycle management.
 """
 
-# Saving the reformatted content to a new file
-reformatted_file_path = '/mnt/data/reformatted_threat_model_document.txt'
-with open(reformatted_file_path, 'w') as f:
-    f.write(content)
-
-reformatted_file_path
 
 
 .... to be continued ...
