@@ -252,29 +252,48 @@ The examination involves:
 
 ##### 3.1 Identify Assets and Data Flows
 
-Identify and document critical assets, data flows, and trust boundaries to understand how data moves through the system and identify potential compromise points.
+Identify and document the critical assets, data flows, and trust boundaries within the system. Understand how data moves through the system and identify potential points of compromise.  
 
 ###### Audit
 
-1. Proper documentation must be in place, clearly outlining critical data flow and security boundaries.
-2. Documentation (architecture diagrams) must trace secret generation, flow, and storage, including cryptographic strength, secret lifecycle, and key management system (KMS) details.
-3. Secrets should be protected throughout their lifecycle.
+[1]. Proper documentation must be in-place for clarity on the critical data flow and security boundaries to be delineated. 
+This does not include user guide or user set-up guide. Though use cases should be depicted.  
+ 
+Documentations (architecture diagrams describing mechanisms) must be clear and direct to trace the secret generation, flow, and storage. Some fundamental premises must be covered: 
+a. Strength of cryptography. 
+a.1. What are the cipher suites used, i.e. ciphering, hashing, signing, etc? What are the key lengths used?   
+a.2. What are the FIPS certification held by your solution? Is so, please cite them.  
+a.3. How do you tend to your data at rest, data-in-transit, and data-in-processing? 
+b. What are the secrets in use? What are they used for? (e.g. there should not be the same key for cipher and signing) What are their life-cycles? 
+c. The secret generations (i.e. Has the RNG been tested for entropy?). 
+d. How are the secrets distributed / populated?  
+KMS (key management system) solution: How is your key management system like? i.e. Secrets management lifecycle (from generation to distribution to rotation / revocation to termination, etc). 
+e. How did flow and storage ensure that the credentials are well guarded? Is there any point where it is transmitted or stored in plaintext? 
+f. How are the secrets (keys, passcodes, etc) protected?   
+g. What are the crypto objectives for each of the data objects of interest to be protected? (e.g. video, audio and short text may be ciphered and protected differently. The objective of confidentiality, privacy, integrity, and availability must be set as a clear criteria.) 
+h. What are the data / parameters (sensitive/ secret) to be protected? 
+- e.g. In some instances, as the SSO (Single-sign on) solutions deployed are using unsigned requests, while the usernames may not be of concern, it is more of how the credentials may be protected in the SSO.  
+The known use case(s) must be stated, as certain use cases can affect the security requirements of the implementation. This involves what data and sensitive operations are involved, as well as which zone(s) these operations are running in. 
+ 
+ [2]. Risk / gap analysis 
+This includes any risk introduced for the exception to be filed. Which rule is the exception transgressing according to a developed Guide to Cryptography and Deployment Guidelines and/or Cryptographic Controls? State the reasons for the exception or omission. * All the mentioned criteria above are central to arriving at the decision for the exception approval. 
+Given the risk / gap analysis, are there any countermeasures introduced to mitigate the risk introduced by the exception? State the effectiveness and limitations or the countermeasures to mitigate the risk introduced by the exception.  
+ 
+a. All applications underwent a formal review process. 
+b. Determination and segmentation of certain applications under graded / 1 single trust model. 
+c. There is a sufficient detection mechanism to deter traveling private keys and leakage. 
+d. The system(s) had undergone a hardening process. 
+While filing the exception, always consider the security sufficiency, completeness and correctness aside the functionality to assert for the justification.  
+  
+[3]. Contingency plans 
+State the detection, resistance, and recovery (repair, roll-back and restore) plan. 
+ 
+Assets are documented in the threat model as follows: 
+ID: A unique ID is assigned to identify each asset. This will be used to cross-reference the asset with any threats or vulnerabilities that are identified. 
+Name: A descriptive name that clearly identifies the asset. 
+Description: A description of what the asset is and why it needs to be protected. 
+Trust Levels: The level of access required to access the entry point is stated here. These will be referenced with the trust levels with the components the asset is interacting with. 
 
-##### 3.2 Risk/Gaps Analysis
-
-Analyze any risks introduced by exceptions and document countermeasures to mitigate these risks.
-
-##### 3.3 Contingency Plans
-
-State detection, resistance, and recovery plans (repair, rollback, restore).
-
-##### Assets Documentation
-
-Each asset is documented with the following details:
-- **ID**: Unique identifier for cross-referencing threats.
-- **Name**: Descriptive name of the asset.
-- **Description**: Reason for asset protection.
-- **Trust Levels**: Access levels required for entry points.
 
 
 1. **Trust Levels**
