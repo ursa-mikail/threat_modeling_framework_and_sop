@@ -399,6 +399,7 @@ Unauthorized Access: Threats involving unauthorized access may target entry poin
 Denial-of-Service (DoS) Attacks: Entry points are susceptible to DoS attacks, where malicious entities overwhelm the system with excessive requests, leading to service disruption and potential downtime. 
 
 Input Validation Issues: Failure to adequately validate and sanitize inputs at entry points may expose the system to input-related vulnerabilities, allowing attackers to manipulate and misuse data. 
+```
  
 Threats associated with <b>exit</b> points may include: 
 ```
