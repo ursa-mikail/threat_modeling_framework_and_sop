@@ -458,7 +458,7 @@ Know your <b>vulnerabilities</b>.
 2.2. How would they be turned into <b>exploits</b>?  
 2.2.1. Are they known?  
 2.2.2. Are they easy to be discovered within our solutions and services? 
-2.2.2. Are they hard to be reproduced? 
+2.2.3. Are they hard to be reproduced? 
 
 Another means from the above equation is to examine: 
 
@@ -466,8 +466,9 @@ Know the <b>likelihood</b>.
 1. What is the probability? How has the occurrences been observed or known?  
  
 Know the <b>Impact</b>. 
+
 2.1 What can be the damage? 
-* this includes business damage (e.g. business reputation, market confidence (Customer Trust Erosion), financial fraud, litigation, loss of competitive edge, etc) and technical damages (e.g. data loss, IP theft, service downtime or disruption, system takeovers, etc)  
+- this includes business damage (e.g. business reputation, market confidence (Customer Trust Erosion), financial fraud, litigation, loss of competitive edge, etc) and technical damages (e.g. data loss, IP theft, service downtime or disruption, system takeovers, etc)  
 2.2. How many services may be affected?  
 2.3. How many components may be affected? 
 
