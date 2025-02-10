@@ -55,7 +55,7 @@ The foundational Step 1 involves a comprehensive understanding of the context su
 ---
 
 ### Step 2: Determine the strata(s) involved for the solution
-This step involves identifying the strata(s) involved in the solution, encompassing the 7-strata domain, which includes Infrastructure (Network), Service (including Applications), System, Platform (Computing Language), Protocol, Algorithm, and Hardware.  
+Step 2 of the threat modeling process involves identifying the strata(s) involved of the solution, encompassing the 7-strata domain, which includes Infrastructure (Network), Service (including Applications), System, Platform (Computing Language), Protocol, Algorithm, and Hardware.  
 
 #### Step Breakdown
 | Step | Input | Means | Participants | Output |
@@ -65,7 +65,8 @@ This step involves identifying the strata(s) involved in the solution, encompass
 ---
 
 ### Step 3: Decompose the solution (Application, Network, etc) into service segments, components and modules
-This step entails breaking down the solution into its service segments, components, and modules for a detailed examination of its structure.  
+Step 3 entails the decomposition of the solution, which may comprise the application, network, and other elements, into service segments, components, and modules. This deconstruction allows for a detailed examination of the various building blocks within the system, providing a comprehensive understanding of its structure. 
+ 
 
 #### Step Breakdown
 | Step | Input | Means | Participants | Output |
@@ -75,7 +76,7 @@ This step entails breaking down the solution into its service segments, componen
 ---
 
 ### Step 4: Determine and Rank Threats
-This step involves identifying and prioritizing threats to focus security efforts on the most significant risks.  
+Step 4 involves determining and ranking threats. This critical phase requires a meticulous analysis of potential vulnerabilities and risks associated with each identified component or module. By prioritizing these threats, security teams can focus their efforts on addressing the most significant and impactful risks to the system.   
 
 #### Step Breakdown
 | Step | Input | Means | Participants | Output |
@@ -85,7 +86,7 @@ This step involves identifying and prioritizing threats to focus security effort
 ---
 
 ### Step 5: Determine Countermeasures and Mitigation
-This step involves designing security controls and countermeasures against identified threats.  
+Step 5 is in determining countermeasures and mitigation strategies. This involves devising proactive measures and security controls to safeguard against the identified threats. Countermeasures may include implementing encryption protocols, access controls, or other security mechanisms tailored to address specific vulnerabilities within the system.  
 
 #### Step Breakdown
 | Step | Input | Means | Participants | Output |
@@ -95,7 +96,7 @@ This step involves designing security controls and countermeasures against ident
 ---
 
 ### Step 6: Address Trade-offs
-This step focuses on balancing security measures with system performance and usability.  
+Step 6 addresses trade-offs. This stage acknowledges that implementing security measures can sometimes introduce trade-offs, such as performance impacts or usability constraints. Security professionals must carefully weigh these trade-offs and make informed decisions to strike a balance between robust security and maintaining the system's functionality and user experience. 
 
 #### Step Breakdown
 | Step | Input | Means | Participants | Output |
