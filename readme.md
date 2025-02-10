@@ -452,7 +452,9 @@ Know your attackers, adversaries and <b>threats</b>.
 ### Adversary profiling 
  
 Know your <b>vulnerabilities</b>. 
+
 2.1. What are the existing <b>vulnerabilities</b>? 
+
 2.2. How would they be turned into <b>exploits</b>?  
 2.2.1. Are they known?  
 2.2.2. Are they easy to be discovered within our solutions and services? 
