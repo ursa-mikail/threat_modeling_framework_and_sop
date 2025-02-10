@@ -35,12 +35,12 @@ Threat modeling involves examining a system from the perspective of a potential 
 
 ## Threat Modeling Process
 
-**Step 1:** Understand the context of the use cases of the solution 
-**Step 2:** Determine the strata(s) involved of the solution 
-**Step 3:** Decompose the solution (Application, Network, etc) into service segments, components and modules 
-**Step 4:** Determine and Rank Threats 
-**Step 5:** Determine Countermeasures and Mitigation 
-**Step 6:** Address Trade-offs 
+→ **Step 1:** Understand the context of the use cases of the solution 
+→ **Step 2:** Determine the strata(s) involved of the solution 
+→ **Step 3:** Decompose the solution (Application, Network, etc) into service segments, components and modules 
+→ **Step 4:** Determine and Rank Threats 
+→ **Step 5:** Determine Countermeasures and Mitigation 
+→ **Step 6:** Address Trade-offs 
 
 ### Step 1: Understand the context of the use cases of the solution
 The foundational step involves a comprehensive understanding of the context surrounding the use cases of the solution. This initial phase is crucial for establishing a clear framework and identifying the specific scenarios in which the system will operate. By comprehensively grasping the context, threat modeling can be aided with insights into user interactions, data flows, and the overall purpose of the solution.  
