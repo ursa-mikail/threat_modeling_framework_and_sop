@@ -476,6 +476,7 @@ The STRIDE defense model may be a framework we can used to arm our solution (Lit
 <img src="./STRIDE-LM.png" alt="STRIDE-LM" style="width:42px;height:42px;">  
 
 <a href="https://csf.tools/visualizations/sunburst-visualization-of-threats-to-controls/">STRIDE-LM</a>
+Sunburst Visualization of STRIDE-LM to Security Controls 
 
 1. <b>S</b>poofing Identity 
 <pre>
@@ -563,7 +564,8 @@ Lateral Movement (LM) was added to STRIDE.
 <b>U</b>nawareness,  
 <b>N</b>oncompliance. 
 
-<b>NIST</b>
+<b><a href="https://www.nist.gov/cyberframework">NIST</a></b>
+
 <pre>
 [NIST Cybersecurity Framework (CSF) controls]   
 ID.AM-1: Physical devices and systems within the organization are inventoried 
