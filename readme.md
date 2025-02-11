@@ -584,6 +584,27 @@ Sunburst Visualization of STRIDE-LM to Security Controls
 </pre>
 
 <pre>
+“””
+An extended version of STRIDE is STRIDE-LM.  
+7. Lateral Movement 
+"""  [Availability] 
+7.1. Network Segmentation 
+""" 
+""" [Authorization] 
+7.2. Least Privilege Principle 
+""" 
+""" [Authentication]  
+7.3. Credential Management  
+""" 
+""" [Integrity]  
+7.4. Monitoring and Logging 
+7.5. Intrusion Detection and Prevention Systems (IDPS) 
+7.6. Endpoint Protection 
+""" 
+</pre>
+
+
+<pre>
 [Spoofing]: {PR.AC-1, PR.AC-6, PR.AC-7, PR.PT-1} 
 [Tampering]: {PR.AC-2, PR.DS-1, PR.DS-2, PR.DS-6, PR.DS-8, PR.IP-3, PR.MA-1, PR.PT-1, PR.PT-2, DE.CM-2, DE.CM-4, DE.CM-5, DE.CM-7} 
 [Repudiation]: {PR.AC-1, PR.AC-6, PR.AC-7, PR.PT-1} 
