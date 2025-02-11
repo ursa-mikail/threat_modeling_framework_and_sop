@@ -240,8 +240,7 @@ As it may be language Platform related, this will affect the <b>Protocol</b> and
 <b>Protocol</b> piece algorithms to be coordinated into a protocol for safe use and implementation. 
 <b>Hardware</b> (+ IoT, embedded) can be on any layer that is designated and deployed for realizing the blockchain operations. 
 
-
-#### Decompose The Solution Into Service Segments, Components And Modules 
+## Decompose The Solution Into Service Segments, Components And Modules 
 The solution pertains to (Application, Network, etc).
 The examination involves:
  **3.1.** Identify Assets and Data Flows 
