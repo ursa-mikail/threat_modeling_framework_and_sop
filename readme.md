@@ -1,11 +1,11 @@
 # Threat Modeling Framework and SOP
 
 ## Contents
-- [Introduction](#Introduction)  
-- [Threat Modeling Process](#Threat-Modeling-Process)
-- [Understand The Context Of The Use Cases Of The Solution](#Understand-The-Context-Of-The-Use-Cases-Of-The-Solution) 
-- [Determine The Strata(s) Involved For The Solution](#Determine-The-Strata(s)-Involved-For-The-Solution)
-- [Decompose The Solution (Application, Network, etc) Into Service Segments, Components And Modules](#Decompose-The-Solution-(Application,-Network,-etc)-Into-Service-Segments,-Components-And-Modules)  
+- [Introduction](#introduction)  
+- [Threat Modeling Process](#threat-modeling-process)
+- [Understand The Context Of The Use Cases Of The Solution](#understand-the-context-of-the-use-cases-of-the-solution) 
+- [Determine The Stratas Involved For The Solution](#determine-the-stratas-involved-for-the-solution)
+- [Decompose The Solution Into Service Segments, Components And Modules](#decompose-the-solution-into-service-segments-components-and-modules)  
 - Determine And Rank Threats  
 
 - Determine Countermeasures and Mitigation  
