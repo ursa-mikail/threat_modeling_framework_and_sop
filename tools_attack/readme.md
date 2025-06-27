@@ -1,6 +1,6 @@
 
 | Tool                                      | Primary Focus                    | Type                     | 
-| ----------------------------------------- | -------------------------------- | ------------------------ | ---------------------------------------------------- |
+| ----------------------------------------- | -------------------------------- | ------------------------ | 
 | **[Shodan](https://www.shodan.io)**       | Internet-connected devices       | Network Scanner          |       |
 | **[Censys](https://censys.io)**           | Devices, certificates, services  | Network Scanner          | 
 | **[Hunter](https://hunter.io)**           | Email address discovery          | OSINT / People Recon     | 
