@@ -22,3 +22,12 @@
 | Man-in-the-Middle (MitM)   | Encrypt traffic in transit                                                                        |
 | Credential Stuffing        | Use an intelligence feed to identify credential stuffing and implement rate limits               |
 
+
+# Control Functions and Control Types
+
+| **CONTROL FUNCTIONS** | **CONTROL TYPES** | **Preventative**                                          | **Detective**                                         | **Corrective**                                               |
+|-----------------------|-------------------|-----------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------|
+|                       | **Physical**       | Fences, gates, locks                                      | CCTV and surveillance camera logs                     | Repair physical damage, re-issue access cards                 |
+|                       | **Technical**      | Firewall, IPS, MFA solution, antivirus software           | Intrusion detection systems, honeypots                | Patch a system, terminate a process, reboot a system, quarantine a virus |
+|                       | **Administrative** | Hiring and termination policies, separation of duties, data classification | Review access rights, audit logs, and unauthorized changes | Implement a business continuity plan or incident response plan |
+
